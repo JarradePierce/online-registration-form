@@ -1,0 +1,145 @@
+/*
+  BASE Style
+ */
+body{
+  font-family: "Times New Roman", Times, serif;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer{
+  text-align: center;
+}
+
+header .intro1{
+  width: 100%;
+  height: 2em;
+  margin-top: 0;
+  padding-top: 1em;
+  text-align: center;
+  background-color: #010F33;
+  color: #fff;
+}
+
+label{
+  color: #828282;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  border-bottom: 3px solid #000;
+}
+
+.intro p{
+  margin-top: 0;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.address-form-container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: .3em;
+  border-top: 1px solid #000;
+}
+
+.address-form-container h2{
+  align-self: flex-start;
+}
+
+.address-form{
+  border-bottom: 3px solid #000;
+  margin-bottom: 1em;
+  padding-bottom: 1.5em;
+}
+
+.address-form input,
+select{
+  width: 100%;
+  height: 3em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border-radius: 5px 5px;
+  background-color: #ECECED;
+  border-style: none;
+}
+
+.address-form input[name=zip]{
+  width: 40%;
+  display: block;
+}
+
+.address-form select{
+  color: #B6B7B6;
+}
+
+.newsletter-form-section{
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-form-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.newsletter-form{
+  width: 90;
+}
+
+.newsletter-form input{
+  margin: .5em;
+  border-radius: 10px 10px;
+}
+
+.newsletter-form textarea{
+  width: 100%;
+  height: 6em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px 10px;
+  border-style: none;
+  background-color: #ECECED;
+}
+
+.newsletter-form button{
+  width: 100%;
+  height: 3.5em;
+  background-color: #18BCA7;
+  color: #fff;
+  border-radius: 10px 10px;
+  border-style: none;
+  font-size: 20px;
+}
+
+.html-news-input{
+  display: flex;
+  flex-direction: row;
+}
+
+.newsletter-form p,
+.newsletter-form h3{
+  color: #828282;
+}
+
+@media(min-width: 768px){
+
+  .address-form-container{
+    width: 70%;
+  }
+
+  .newsletter-form-container{
+    width: 70%;
+  }
+
+
+}
