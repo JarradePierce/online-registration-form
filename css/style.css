@@ -30,8 +30,13 @@ label{
   color: #828282;
 }
 
+fieldset{
+  border: none;
+}
+
 ::placeholder{
-  padding-left: 85%;
+  padding-left: 80%;
+  padding-right: 2%;
 }
 
 .intro {
@@ -57,17 +62,20 @@ label{
   border-top: 1px solid #000;
 }
 
-.address-form-container h2{
+.address-form-field{
+  border-bottom: 2px solid #000;
+}
+
+.address-form-field h2{
   align-self: flex-start;
 }
 
 .address-form{
-  border-bottom: 3px solid #000;
   margin-bottom: 1em;
   padding-bottom: 1.5em;
 }
 
-.address-form input,
+.address-form-field input,
 select{
   width: 100%;
   height: 3em;
@@ -78,12 +86,12 @@ select{
   border-style: none;
 }
 
-.address-form input[name=zip]{
+.address-form-field input[name=zip]{
   width: 40%;
   display: block;
 }
 
-.address-form select{
+.address-form-field select{
   color: #B6B7B6;
 }
 
@@ -97,7 +105,7 @@ select{
 }
 
 .newsletter-form{
-  width: 90%  ;
+  width: 90%;
 }
 
 .newsletter-form input{
@@ -145,32 +153,32 @@ select{
     width: 70%;
   }
 
-  .address-form-container input{
+  .address-form-field input{
     width: 80%;
     float: right;
   }
 
-  .address-form-container label{
+  .address-form-field label{
     float: left;
     clear: both;
     margin-top: 20px;
   }
 
-  .address-form-container input[name=zip]{
+  .address-form-field input[name=zip]{
     float: none;
     margin-left: 20%;
     width: 30%;
   }
 
-  .address-form-container select[name=state]{
+  .address-form-field select[name=state]{
     width: 80%;
     float: right;
     margin-bottom: 1em;
   }
 
-  .newsletter-form-container{
-    width: 70%;
+  .newsletter-form{
+    width: 100%;
+    margin: 0;
   }
-
 
 }

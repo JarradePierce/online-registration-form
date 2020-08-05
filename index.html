@@ -16,64 +16,58 @@
       </div>
     </header>
 
-    <section class='address-form-section'>
-      <div class="address-form-container">
-        <h2>Contact Information</h2>
-
+    <div class='address-form-container'>
         <form class="address-form">
-          <label>Full Name</label>
-          <input type="text" placeholder="Required">
-          <label>Email address</label>
-          <input type="text" placeholder="Required">
-          <label>Phone Number</label>
-          <input type="text">
-          <label>Street Address</label>
-          <input type="text">
-          <label>City</label>
-          <input type="text">
-          <label>State</label>
-          <select name="state">
+          <fieldset class='address-form-field'>
+            <legend><h2>Contact Information</h2></legend>
+          <label for='name'>Full Name</label>
+          <input name='name' type="text" placeholder="Required">
+          <label for='email'>Email address</label>
+          <input name='email' type="text" placeholder="Required">
+          <label for='phone'>Phone Number</label>
+          <input name='phone' type="text">
+          <label for='street'>Street Address</label>
+          <input name='street' type="text">
+          <label for='city'>City</label>
+          <input name='city' type="text">
+          <label for='state'>State</label>
+          <select id='state-select' name="state">
             <option>Choose a state</option>
             <option>CA</option>
           </select>
-          <label>Zip Code</label>
-          <input type="text" name="zip"/>
+          <label for='zip'>Zip Code</label>
+          <input name='zip' type="text">
+        </fieldset>
+        <fieldset class='newsletter-form newsletter-form-container'>
+            <legend><h2>Newsletter</h2></legend>
+            <p>Select the newsletters you would like to recieve</p>
+            <section>
+            <input name='html' type="checkbox">
+            <label for='html'>HTML News</label>
+            </section>
+            <section>
+            <input name='css' type="checkbox">
+            <label for='css'>CSS News</label>
+            </section>
+            <section>
+            <input name='javascript' type="checkbox">
+            <label for='javascript'>Javascript News</label>
+            </section>
+            <h3>Newsletter format</h3>
+            <section>
+            <input name='html' type="radio">
+            <label for='formatHTML'>HTML</label>
+            </section>
+            <section>
+            <input name='plain' type="radio">
+            <label for='formatPlain'>Plain text</label>
+            </section>
+            <h3>Other topics you'd like to hear about</h3>
+            <textarea id='topics-textarea' name='address-textarea'></textarea>
+            <button type="button">Sign Up</button>
+          </fieldset>
         </form>
       </div>
-    </section>
-
-    <section class='newletter-form-section'>
-      <div class="newsletter-form-container">
-        <h2>Newsletter</h2>
-        <p>Select the newsletters you would like to recieve</p>
-        <form class="newsletter-form">
-          <section>
-          <input type="checkbox">
-          <label>HTML News</label>
-          </section>
-          <section>
-          <input type="checkbox">
-          <label>CSS News</label>
-          </section>
-          <section>
-          <input type="checkbox">
-          <label>Javascript News</label>
-          </section>
-          <h3>Newsletter format</h3>
-          <section>
-          <input type="radio">
-          <label>HTML</label>
-          </section>
-          <section>
-          <input type="radio">
-          <label>Plain text</label>
-          </section>
-          <h3>Other topics you'd like to hear about</h3>
-          <textarea></textarea>
-          <button type="button">Sign Up</button>
-        </form>
-      </div>
-    </section>
 
     <footer>
       <p>Copyright The Code Review</p>
