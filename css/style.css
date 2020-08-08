@@ -2,7 +2,7 @@
   BASE Style
  */
 body{
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Merriweather', serif;
 }
 
 header{
@@ -24,6 +24,9 @@ header .intro1{
   text-align: center;
   background-color: #010F33;
   color: #fff;
+}
+input:focus{
+  color: #010F33;
 }
 
 label{
